@@ -1,9 +1,6 @@
 # Giphy Client
 
-Sample Flutter aplication build based on BloC (Cubit) architecture
-
-
-![alt text](https://github.com/Afur/giphy_client/blob/master/screenshots/Screenshot1.png?raw=true)
+Sample Flutter application build based on BloC (Cubit) architecture
 
 ## Used libraries
 * Bloc
