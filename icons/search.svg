@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/searchSquare</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="3.87041424%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF0090" offset="0%"></stop>
+            <stop stop-color="#BB00FF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M10.128527,17.9000064 L3.72512299,24.7339393 C3.22832476,25.2641395 2.39577806,25.2912171 1.8655779,24.7944189 C1.33537775,24.2976206 1.30830014,23.4650739 1.80509837,22.9348738 L8.24963876,16.0570387 C6.98125354,14.4163843 6.22528022,12.3481234 6.22528022,10.1021535 C6.22528022,4.77923371 10.4714604,0.454477307 15.7215713,0.454477307 C20.9716822,0.454477307 25.2178624,4.77923371 25.2178624,10.1021535 C25.2178624,15.4250732 20.9716822,19.7498296 15.7215713,19.7498296 C13.6294046,19.7498296 11.696664,19.0630502 10.128527,17.9000064 Z M15.7215713,17.1186452 C19.5076109,17.1186452 22.586678,13.9825995 22.586678,10.1021535 C22.586678,6.22170742 19.5076109,3.08566171 15.7215713,3.08566171 C11.9355317,3.08566171 8.85646462,6.22170742 8.85646462,10.1021535 C8.85646462,13.9825995 11.9355317,17.1186452 15.7215713,17.1186452 Z" id="path-2"></path>
+    </defs>
+    <g id="🚦-components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sdk/icons/searchSquare">
+            <g id="icons/searchSquare">
+                <polygon id="bg" fill="url(#linearGradient-1)" points="0 0 45 0 45 45 0 45"></polygon>
+                <g id="sdk/icons/search-(white)" transform="translate(10.000000, 10.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="search-icon" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
