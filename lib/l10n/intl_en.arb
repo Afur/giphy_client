@@ -5,7 +5,6 @@
   "share": "SHARE",
   "no_saved_gifs": "You don't have any saved gifs",
   "no_gifs_found": "No gifs was found",
-  "no_internet_connection": "No internet connection",
-  "unable_to_show_launches": "Unable to show past launches",
-  "tap_to_try_again": "Tap to try again"
+  "feed": "Feed",
+  "saved": "Saved"
 }

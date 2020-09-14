@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:giphyclient/api/models/gif.dart';
 import 'package:giphyclient/ui/detailed/detailed_page.dart';
-import 'package:giphyclient/ui/featured/content_cubit.dart';
+import 'package:giphyclient/ui/content/content_cubit.dart';
 
 class GifPreview extends StatelessWidget {
   final Gif gif;

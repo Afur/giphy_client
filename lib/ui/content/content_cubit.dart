@@ -36,7 +36,7 @@ class ContentCubit extends Cubit<ContentState> {
 
   void fetchFeatured()  {
       emit(ContentState.loading());
-      _gifsRepository.fetch(GifsType.trendings());
+      _gifsRepository.fetch(GifsType.featured());
   }
 
   void fetchSaved()  {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:giphyclient/ui/detailed/detailed_page.dart';
-import 'package:giphyclient/ui/featured/content_page.dart';
+import 'package:giphyclient/generated/l10n.dart';
+import 'package:giphyclient/ui/content/content_page.dart';
 import 'package:giphyclient/widgets/custom_bottom_navigation_bar.dart';
 
 class MainPage extends StatefulWidget {
@@ -25,8 +25,8 @@ class _MainPageState extends State<MainPage> {
       bottomNavigationBar: CustomBottomNavigationBar(
         currentIndex: _currentPageIndex,
         items: [
-          CustomBottomNavigationBarItem(text: Text("Feed")),
-          CustomBottomNavigationBarItem(text: Text("Saved")),
+          CustomBottomNavigationBarItem(text: Text(S.of(context).feed)),
+          CustomBottomNavigationBarItem(text: Text(S.of(context).saved)),
         ],
         onTap: onTabTapped,
       ),

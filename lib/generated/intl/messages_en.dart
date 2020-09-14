@@ -21,14 +21,13 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
+    "feed" : MessageLookupByLibrary.simpleMessage("Feed"),
     "no_gifs_found" : MessageLookupByLibrary.simpleMessage("No gifs was found"),
-    "no_internet_connection" : MessageLookupByLibrary.simpleMessage("No internet connection"),
     "no_saved_gifs" : MessageLookupByLibrary.simpleMessage("You don\'t have any saved gifs"),
     "save" : MessageLookupByLibrary.simpleMessage("SAVE"),
+    "saved" : MessageLookupByLibrary.simpleMessage("Saved"),
     "share" : MessageLookupByLibrary.simpleMessage("SHARE"),
-    "tap_to_try_again" : MessageLookupByLibrary.simpleMessage("Tap to try again"),
     "title" : MessageLookupByLibrary.simpleMessage("Giphy Client"),
-    "unable_to_show_launches" : MessageLookupByLibrary.simpleMessage("Unable to show past launches"),
     "unsave" : MessageLookupByLibrary.simpleMessage("UNSAVE")
   };
 }

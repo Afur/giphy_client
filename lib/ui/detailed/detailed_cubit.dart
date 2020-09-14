@@ -16,17 +16,17 @@ class DetailedCubit extends Cubit<DetailedState> {
   void checkIfSaved(Gif gif) async {
     emit(DetailedState.loading());
     (await _savedRepository.isSaved(gif))
-        .let((isSaved) => emit(DetailedState.loaded(isSaved)));
+        .let((it) => emit(DetailedState.loaded(isSaved: it)));
   }
 
   void save(Gif gif) async {
     await _savedRepository.save(gif);
-    emit(DetailedState.loaded(true));
+    emit(DetailedState.loaded(isSaved: true));
   }
 
   void unsave(Gif gif) async {
     await _savedRepository.unsave(gif);
-    emit(DetailedState.loaded(false));
+    emit(DetailedState.loaded(isSaved: false));
   }
 }
 
@@ -34,7 +34,7 @@ class DetailedCubit extends Cubit<DetailedState> {
 abstract class DetailedState with _$DetailedState {
   const factory DetailedState.loading() = Loading;
 
-  const factory DetailedState.loaded(bool isSaved) = Loaded;
+  const factory DetailedState.loaded({bool isSaved}) = Loaded;
 
   const factory DetailedState.error() = Error;
 }

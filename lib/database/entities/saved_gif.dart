@@ -19,9 +19,9 @@ class SavedGif {
 
 extension SavedGifExtensions on SavedGif {
   Gif toDomain() => Gif(
-      this.id,
-      this.url,
-      Configurations(
+      id: this.id,
+      url: this.url,
+      configurations: Configurations(
           original: Source(url: this.originalUrl),
           preview: Source(
               url: this.previewUrl,

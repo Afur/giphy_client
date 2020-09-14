@@ -93,31 +93,21 @@ class S {
     );
   }
 
-  /// `No internet connection`
-  String get no_internet_connection {
+  /// `Feed`
+  String get feed {
     return Intl.message(
-      'No internet connection',
-      name: 'no_internet_connection',
+      'Feed',
+      name: 'feed',
       desc: '',
       args: [],
     );
   }
 
-  /// `Unable to show past launches`
-  String get unable_to_show_launches {
+  /// `Saved`
+  String get saved {
     return Intl.message(
-      'Unable to show past launches',
-      name: 'unable_to_show_launches',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Tap to try again`
-  String get tap_to_try_again {
-    return Intl.message(
-      'Tap to try again',
-      name: 'tap_to_try_again',
+      'Saved',
+      name: 'saved',
       desc: '',
       args: [],
     );

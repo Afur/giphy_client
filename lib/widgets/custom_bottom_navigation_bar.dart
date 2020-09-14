@@ -48,7 +48,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
   @override
   Widget build(BuildContext context) {
     width = MediaQuery.of(context).size.width;
-    activeColor = Color(0xfffa1a8e);
+    activeColor = Colors.white;
 
     return Container(
       height: BAR_HEIGHT + MediaQuery.of(context).viewPadding.bottom,

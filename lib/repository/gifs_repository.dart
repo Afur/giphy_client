@@ -46,7 +46,7 @@ class GifsRepositoryImpl extends GifsRepository {
     _clean();
     _currentGifsType = type;
     _currentGifsType.when(
-        trendings: () => _fetchTrendings(),
+        featured: () => _fetchFeatured(),
         search: (query) => _fetchSearchResults(query),
         saved: () => _fetchSaved());
   }
@@ -54,7 +54,7 @@ class GifsRepositoryImpl extends GifsRepository {
   @override
   void fetchMore() {
     _pagination?.let((it) => _currentGifsType.when(
-        trendings: () => _fetchTrendings(offset: it.totalOffset),
+        featured: () => _fetchFeatured(offset: it.totalOffset),
         search: (query) => _fetchSearchResults(query, offset: it.totalOffset),
         saved: () => unit));
   }
@@ -69,8 +69,8 @@ class GifsRepositoryImpl extends GifsRepository {
     _gifsSubject.add([]);
   }
 
-  Future<void> _fetchTrendings({int offset = 0}) async {
-    final response = await _apiService.getTrendings(
+  Future<void> _fetchFeatured({int offset = 0}) async {
+    final response = await _apiService.getFeatured(
         Config.GIPHY_API_KEY, offset);
     _currentGifs += response.gifs;
     _pagination = response.pagination;
@@ -97,7 +97,7 @@ class GifsRepositoryImpl extends GifsRepository {
 
 @freezed
 abstract class GifsType with _$GifsType {
-  const factory GifsType.trendings() = Trendings;
+  const factory GifsType.featured() = Featured;
 
   const factory GifsType.search(String query) = Search;
 

@@ -8,11 +8,11 @@ part 'gif.g.dart';
 
 @freezed
 abstract class Gif with _$Gif {
-  factory Gif(
+  factory Gif({
     @JsonKey(name: 'id') String id,
     @JsonKey(name: 'url') String url,
     @JsonKey(name: 'images') Configurations configurations,
-  ) = _Gif;
+  }) = _Gif;
 
   factory Gif.fromJson(Map<String, dynamic> json) => _$GifFromJson(json);
 }

@@ -9,13 +9,13 @@ abstract class ApiService {
   factory ApiService(Dio dio, {String baseUrl}) = _ApiService;
 
   @GET("/v1/gifs/trending")
-  Future<TrendingResponse> getTrendings(
+  Future<GifsResponse> getFeatured(
     @Query('api_key') String apiKey,
     @Query('offset') int offset,
   );
 
   @GET("/v1/gifs/search")
-  Future<TrendingResponse> getSearchResult(
+  Future<GifsResponse> getSearchResult(
       @Query('api_key') String apiKey,
       @Query('q') String query,
       @Query('offset') int offset,

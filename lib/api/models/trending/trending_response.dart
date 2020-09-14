@@ -7,12 +7,12 @@ part 'trending_response.freezed.dart';
 part 'trending_response.g.dart';
 
 @freezed
-abstract class TrendingResponse with _$TrendingResponse {
-  factory TrendingResponse(
+abstract class GifsResponse with _$GifsResponse {
+  factory GifsResponse(
       @JsonKey(name: 'data') List<Gif> gifs,
       @JsonKey(name: 'pagination') Pagination pagination,
-      ) = _TrendingResponse;
+      ) = _GifsResponse;
 
-  factory TrendingResponse.fromJson(Map<String, dynamic> json) =>
-      _$TrendingResponseFromJson(json);
+  factory GifsResponse.fromJson(Map<String, dynamic> json) =>
+      _$GifsResponseFromJson(json);
 }

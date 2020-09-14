@@ -4,7 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:giphyclient/api/models/gif.dart';
 import 'package:giphyclient/generated/l10n.dart';
 import 'package:giphyclient/ui/base_page.dart';
-import 'package:giphyclient/ui/featured/content_cubit.dart';
+import 'package:giphyclient/ui/content/content_cubit.dart';
 import 'package:giphyclient/values/dimensions.dart';
 import 'package:giphyclient/widgets/centered_text.dart';
 import 'package:giphyclient/widgets/gifs_grid_view.dart';
